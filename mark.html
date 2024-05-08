@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal -->
+    <style>
+        .btn-display-class {
+            padding: 1rem;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: red;">Hello World</h1>
+    <input type="text">
+    <input type="date" name="date-input" id="date-input">
+    <input type="datetime-local" name="" id="">
+    <input type="number" name="" id="">
+    <br>
+    <select name="" id="">
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+    <button name="btn-display" class="btn-display-class" id="btn-Display">Click Display</button>
+    <br>
+    <table id="table-display" style="border: 5px;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Mark-Varens</td>
+                <td>Cebu City</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Adrian</td>
+                <td>Lapu-lapu City</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script>
+    var btnDisplay = document.getElementById("btn-Display");
+    btnDisplay.addEventListener('click', function () {
+        alert("Hello world");
+    })
+</script>
+
+</html>

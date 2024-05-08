@@ -1,0 +1,19 @@
+.btn-display-class{
+    background-color: red;
+}
+
+.btn-display-class:hover{
+    background-color: gray;
+}
+
+#table-display{
+    background-color: green;
+}
+
+#table-display thead{
+    background-color: blue;
+}
+
+#table-display tbody{
+    background-color: yellow;
+}
