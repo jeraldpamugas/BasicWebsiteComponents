@@ -18,13 +18,14 @@
 </head>
 
 <body>
+    <div id="html-container"></div>
     <h1 style="color: red;">Hello World</h1>
-    <input type="text">
-    <input type="date" name="date-input" id="date-input">
-    <input type="datetime-local" name="" id="">
+    <input type="text" class="class-text" id="id-input">
+    <input type="date" class="class-text" name="date-input" id="date-input">
+    <input type="datetime-local" class="class-text" name="" id="">
     <input type="number" name="" id="">
     <br>
-    <select name="" id="">
+    <select name="" id="num-list">
         <option value="1">One</option>
         <option value="2">Two</option>
         <option value="3">Three</option>
@@ -53,9 +54,14 @@
         </tbody>
     </table>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
     var btnDisplay = document.getElementById("btn-Display");
     btnDisplay.addEventListener('click', function () {
+        var price = 10;
+        var qty = 5;
+        var total = price * qty;
+        console.log(total);
         alert("Hello world");
     })
 </script>
