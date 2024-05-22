@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .calculator {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .calculator input {
+            height: 60px;
+            font-size: 24px;
+            text-align: right;
+        }
+
+        .btn-block {
+            margin-bottom: 10px;
+        }
+
+        .btn-test {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- <div class="container-sm bg-secondary">100% wide until small breakpoint</div>
+        <div class="container-md bg-warning">100% wide until medium breakpoint</div>
+        <div class="container-lg bg-success">100% wide until large breakpoint</div> -->
+
+        <div class="container-fluid mt-5 ml-2 mr-2">
+            <div class="row bg-primary">
+                <div class="col">
+                    1 of 3
+                </div>
+                <div class="col-9 bg-danger">
+                    10 of 3
+                </div>
+                <div class="col-2">
+                    1 of 3
+                </div>
+            </div>
+            <div class="row bg-success">
+                <div class="col">
+                    1 of 3
+                </div>
+                <div class="col">
+                    2 of 3
+                </div>
+                <div class="col">
+                    3 of 3
+                </div>
+            </div>
+            <h1 class="display-5">h1. Bootstrap heading</h1>
+            <h2>h2. Bootstrap heading</h2>
+            <h3>h3. Bootstrap heading</h3>
+            <h4>h4. Bootstrap heading</h4>
+            <h5>h5. Bootstrap heading</h5>
+            <h6>h6. Bootstrap heading</h6>
+
+            <div class="card w-25">
+                <img src="img.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Mga gwapo sa teradyne</p>
+                </div>
+              </div>
+        </div>
+
+        <button class="btn btn-outline-success">test <span class="badge badge-primary">001</span>
+        </button>
+
+        <!-- <table class="table table-danger">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table> -->
+    </div>
+
+
+
+
+
+
+
+    <!-- <div class="">
+        <div class="form-group">
+            <input type="text" class="form-control" id="display" readonly>
+        </div>
+        <div class="form-row">
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(7)">7</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(8)">8</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(9)">9</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-warning btn-block" onclick="setOperator('/')">/</button>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(4)">4</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(5)">5</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(6)">6</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-warning btn-block" onclick="setOperator('*')">*</button>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(1)">1</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(2)">2</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(3)">3</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-warning btn-block" onclick="setOperator('-')">-</button>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(0)">0</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendDecimal()">.</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-danger btn-block" onclick="clearDisplay()">C</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-warning btn-block" onclick="setOperator('+')">+</button>
+            </div>
+        </div>
+        <div class="form-row mt-2">
+            <div class="col-12">
+                <button class="btn btn-success btn-block" onclick="calculateResult()">=</button>
+            </div>
+        </div>
+    </div> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        let display = $("#display");
+        let currentInput = "";
+        let operator = null;
+        let firstNumber = null;
+
+        function appendNumber(number) {
+            currentInput += number;
+            display.val(currentInput);
+        }
+
+        function appendDecimal() {
+            if (!currentInput.includes(".")) {
+                currentInput += ".";
+                display.val(currentInput);
+            }
+        }
+
+        function setOperator(op) {
+            if (currentInput === "") return;
+            firstNumber = parseFloat(currentInput);
+            operator = op;
+            currentInput = "";
+        }
+
+        function clearDisplay() {
+            currentInput = "";
+            operator = null;
+            firstNumber = null;
+            display.val("");
+        }
+
+        function calculateResult() {
+            if (currentInput === "" || operator === null || firstNumber === null) return;
+            let secondNumber = parseFloat(currentInput);
+            let result = 0;
+            switch (operator) {
+                case '+':
+                    result = firstNumber + secondNumber;
+                    break;
+                case '-':
+                    result = firstNumber - secondNumber;
+                    break;
+                case '*':
+                    result = firstNumber * secondNumber;
+                    break;
+                case '/':
+                    result = firstNumber / secondNumber;
+                    break;
+            }
+            display.val(result);
+            currentInput = result.toString();
+            operator = null;
+            firstNumber = null;
+        }
+    </script>
+</body>
+
+</html>
