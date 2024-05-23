@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIM CALCULATOR</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="timstyle.css">
+    <link rel = "icon" href = "/icon/favicon-32x32.png" type = "image/x-icon">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="form-group">
+            <input type="text" class="form-control" id="display" readonly>
+        </div>
+        <div class="form-row">
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(7)"><strong>7</strong></button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(8)"><strong>8</strong></button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(9)"><strong>9</strong></button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-warning btn-block" onclick="setOperator('/')"><strong>&divide</strong></button>
+            </div>
+        </div>
+        <div class="form-row mt-2">
+            <div class="col-3">
+                <button class="btn btn-light    btn-block" onclick="appendNumber(4)"><strong>4</strong></button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(5)"><strong>5</strong></button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(6)"><strong>6</strong></button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-warning btn-block" onclick="setOperator('*')"><strong>&times</strong></button>
+            </div>
+        </div>
+        <div class="form-row mt-2">
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(1)"><strong>1</strong></button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(2)"><strong>2</strong></button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(3)"><strong>3</strong></button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-warning btn-block" onclick="setOperator('-')"><strong>&#8722</strong></button>
+            </div>
+        </div>
+        <!-- Repeat similar blocks for other numbers and operators -->
+        <div class="form-row mt-2">
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(0)"><strong>0</strong></button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-danger btn-block" onclick="clearDisplay()">AC</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-info btn-block" onclick="calculateResult()"><strong>&#61</strong></button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-warning btn-block" onclick="setOperator('+')"><strong>&#43</strong></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="timscript.js"></script>
+</body>
+
+</html>

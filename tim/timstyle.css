@@ -1,0 +1,30 @@
+body{
+    background-image:url("bg-pic/bg-page.jpg");
+    background-position: auto;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+.calculator {
+    max-width: 320px;
+    margin: 10% auto;
+    padding: 20px;
+    border: 3.5px solid #1e1e1e;
+    border-radius: 10px;
+    background-color:green;
+}
+.calculator input {
+    height: 60px;
+    font-size: 24px;
+    text-align: right;
+    border-radius: 10px;
+    border: 3px solid #444242;
+}
+
+.btn{
+    width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #1e1e1e;
+  
+}
