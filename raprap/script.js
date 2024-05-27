@@ -39,6 +39,7 @@ function calculateResult() {
     case "/":
       result = firstNumber / secondNumber;
       break;
+   
   }
   display.val(result);
   currentInput = result.toString();
