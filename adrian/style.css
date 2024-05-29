@@ -1,0 +1,12 @@
+.calculator {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.calculator input {
+    height: 40px;
+    font-size: 30px;
+    text-align: right;
+}
