@@ -8,34 +8,78 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
-        <div class="form-group">
-            <input type="text" class="form-control" id="display" readonly>
-        </div>
-        <div class="form-row">
-            <div class="col-3">
-                <button class="btn btn-light btn-block" onclick="appendNumber(7)">7</button>
+    <div class="container">
+        <div class="calculator">
+            <div class="form-group">
+                <input type="text" class="form-control" id="display" readonly>
             </div>
-            <div class="col-3">
-                <button class="btn btn-light btn-block" onclick="appendNumber(8)">8</button>
+            <div class="form-row mt-1">
+                <div class="col-3">
+                    <button class="btn btn-light btn-block" onclick="appendNumber(7)">7</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-light btn-block" onclick="appendNumber(8)">8</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-light btn-block" onclick="appendNumber(9)">9</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-warning btn-block" onclick="setOperator('/')">/</button>
+                </div>
             </div>
-            <div class="col-3">
-                <button class="btn btn-light btn-block" onclick="appendNumber(9)">9</button>
+          
+            <div class="form-row mt-1">
+                <div class="col-3">
+                    <button class="btn btn-light btn-block" onclick="appendNumber(4)">4</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-light btn-block" onclick="appendNumber(5)">5</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-light btn-block" onclick="appendNumber(6)">6</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-warning btn-block" onclick="setOperator('*')">x</button>
+                </div>
             </div>
-            <div class="col-3">
-                <button class="btn btn-warning btn-block" onclick="setOperator('/')">/</button>
+            <div class="form-row mt-1">
+                <div class="col-3">
+                    <button class="btn btn-light btn-block" onclick="appendNumber(1)">1</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-light btn-block" onclick="appendNumber(2)">2</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-light btn-block" onclick="appendNumber(3)">3</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-warning btn-block" onclick="setOperator('-')">-</button>
+                </div>
             </div>
-        </div>
-        <!-- Repeat similar blocks for other numbers and operators -->
-        <div class="form-row mt-2">
-            <div class="col-6">
-                <button class="btn btn-danger btn-block" onclick="clearDisplay()">C</button>
+            <div class="form-row mt-1">
+                <div class="col-3">
+                    <button class="btn btn-light btn-block" onclick="appendNumber('.')">.</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-light btn-block" onclick="appendNumber(0)">0</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-warning btn-block" onclick="setOperator('+')">+</button>
+                </div>
+                
             </div>
-            <div class="col-6">
-                <button class="btn btn-success btn-block" onclick="calculateResult()">=</button>
+            <!-- Repeat similar blocks for other numbers and operators -->
+            <div class="form-row mt-1">
+                <div class="col-6">
+                    <button class="btn btn-danger btn-block" onclick="clearDisplay()">C</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-success btn-block" onclick="calculateResult()">=</button>
+                </div>
             </div>
         </div>
     </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
