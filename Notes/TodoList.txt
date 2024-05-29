@@ -1,0 +1,31 @@
+TODO LIST
+
+- Make a template for list
+
+- get Value from Input
+  e.g.
+  var inputMessage = $("#message").val();
+
+- Create element using jQuery
+  e.g.
+  var btn = $('<button class="btn btn-danger btn-sm">Delete</button>');
+  $("#list").append(btn);
+
+  var message = $('<span>' + inputMessage + '</span>');
+  btn.append(message);
+
+- append vs prepend
+  append = end
+  prepend = start
+
+- remove
+  e.g.
+  $("#btn-delete").remove();
+
+- remove parent element
+  e.g.
+  $("#btn-delete").closest("div").remove();
+
+- remove specific li
+  e.g.
+  $('#myList li:nth-child(3)').remove();
