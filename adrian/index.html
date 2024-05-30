@@ -51,19 +51,22 @@
                 <button class="btn btn-light btn-block" onclick="appendNumber(3)">3</button>
             </div>
             <div class="col-3">
-                <button class="btn btn-warning btn-block" onclick="setOperator('/')">/</button>
+                <button class="btn btn-warning btn-block" onclick="setOperator('/')">&divide</button>
             </div>
         </div>
         <!-- Repeat similar blocks for other numbers and operators -->
         <div class="form-row mt-2">
-            <div class="col-4">
+            <div class="col-3">
+                <button class="btn btn-light btn-block" onclick="appendNumber(0)">0</button>
+            </div>
+            <div class="col-3">
                 <button class="btn btn-danger btn-block" onclick="clearDisplay()">C</button>
             </div>
-            <div class="col-4">
+            <div class="col-3">
                 <button class="btn btn-success btn-block" onclick="calculateResult()">=</button>
             </div>
-            <div class="col-4">
-                <button class="btn btn-warning btn-block" onclick="setOperator('x')">x</button>
+            <div class="col-3">
+                <button class="btn btn-warning btn-block" onclick="setOperator('x')">*</button>
             </div>
         </div>
     </div>
